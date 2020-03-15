@@ -1,0 +1,16 @@
+---
+
+- include_vars: ../../../group_vars/cdh_servers.yml
+- include_vars: ../../../group_vars/scm_server.yml
+- include_vars: ../../../group_vars/db_server.yml
+
+# change ownership of data directory
+- name: Change ownership of Data directory
+  hosts: worker_servers
+  file:
+    path: "/dfs/data*"
+    state: directory
+    mode: '0755'
+    owner: hdfs
+    group: hdfs
+  become: yes

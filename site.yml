@@ -55,6 +55,12 @@
     - cm_agents
   tags: cm_agents
 
+- name: Change Ownership of Data Directory
+  hosts: worker_servers
+  roles:
+    - data_dir
+  tags: data_dir
+
 - name: Install Cloudera Manager Server
   hosts: scm_server
   roles:
