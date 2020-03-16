@@ -15,7 +15,7 @@ backup_file: testfile.txt
 ## Java installation options
 ## ------------------------------------------------------------------------------------------------------------
 
-java_installation_strategy: package       # can be set to 'none', 'package' or 'rpm'
+java_installation_strategy: rpm       # can be set to 'none', 'package' or 'rpm'
 
 java_package: java-1.8.0-openjdk-devel
 java_rpm_location: /tmp/jdk-8u181-linux-x64.rpm
