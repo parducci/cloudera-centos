@@ -8,6 +8,8 @@ mysql_log: /var/log/mysqld.log
 mysql_pid_dir: /var/run/mysqld
 mysql_pid_file: "{{ mysql_pid_dir }}/mysqld.pid"
 mysql_root_password: changeme
+mysql_innodb_log_buffer_size: 64M
+mysql_innodb_buffer_pool_size: 4G
 
 databases:
   scm:
