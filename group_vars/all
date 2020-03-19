@@ -9,6 +9,8 @@ selinux_mode: disabled
 storage_mount: /mnt/fuse_stor
 backup_file: testfile.txt
 
+cluster_version_cm: 6.3.1
+
 #ansible_ssh_common_args: ' -A '
 
 ## ------------------------------------------------------------------------------------------------------------

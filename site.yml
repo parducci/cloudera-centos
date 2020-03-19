@@ -79,9 +79,3 @@
     - dataimport
   tags: data_import
 
-- name: Install Java 8
-  hosts: cdh_servers
-  roles:
-    - java8
-  tags: java8
-
